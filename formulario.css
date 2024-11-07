@@ -1,0 +1,188 @@
+:root {
+    --color-bisque: bisque;
+    --color-background: rgba(18, 50, 18, 0.747);
+    --color-header-bg: rgba(47, 79, 69, 0.779);
+    --color-highlight: rgb(205, 233, 152);
+    --color-footer-bg: rgb(109, 138, 87);
+    --color-text-light: rgba(255, 235, 205, 0.495);
+    --color-text-dark: rgb(31, 40, 23);
+    --color-accent: rgb(234, 133, 9);
+    --font-large: 70px;
+    --font-medium: 30px;
+    --font-small: 20px;
+}
+
+body {
+    background-color: var(--color-background);
+    margin: 4%;
+}
+
+header ul li { 
+    list-style: none;
+
+}
+
+header nav ul li { 
+color:bisque;
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+
+}
+header img {
+    margin: 1.5625rem;
+    height: 6rem;
+    width: 6rem;
+
+}
+
+header{ 
+    background-color: rgba(47, 79, 69, 0.779);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+.listado1 {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 3.5rem ;
+    padding-right: 3.125rem;
+    list-style: none;
+
+}
+a{
+    font-family: sans-serif;
+    font-style:oblique;
+    font-size: 35px;
+    color: rgb(190, 133, 46);
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+footer{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+footer div ul {
+    list-style: none;
+}
+
+.acerca-imagen{
+    position: relative;
+    height: 1em;
+    width: 6rem;
+    padding: 4%;
+
+    
+}
+.titulo_seccion {
+    position: relative;
+    font-size: 40px;
+    color: #003750;
+    text-align: center;
+}
+.container {
+    background-color: rgb(98, 138, 101);
+    display: block;
+    max-width: 80%; /* Define el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 1.2em; /* Agrega un poco de espacio alrededor del formulario */
+    border: 12px rgb(52, 19, 15); /* Agrega un borde al contenedor */
+    border-radius: 3em; /* Agrega bordes redondeados al contenedor */
+}
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        background-color:darkslategray;
+    }
+
+    .listado1 {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--color-footer-bg);
+        text-align: center;
+        top: 12.9rem;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    a {
+        border: 1px solid rgb(214, 156, 33);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-around;
+        margin: 2.5rem;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 5px 0;
+        line-height: 1.875rem;
+        font-size: 20px; 
+    }
+
+    .parrafo2 {
+        font-size: 1.43rem;
+    }
+}
+.form-group {
+    font-family: sans-serif;
+    font-style: italic;
+    color:rgb(52, 19, 15);
+    margin-bottom: 15px; /* Espacio entre cada input */
+}
+label {
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%; /* Define el ancho máximo del input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    resize:vertical; /* Permite redimensionar verticalmente el textarea */
+}
+button {
+    background-color: darkolivegreen;
+    color: bisque;
+    border-radius: 5em;
+    
+}
+button:hover {
+    background-color: #0056b3;
+}

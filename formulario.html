@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <header>
+<img src="../Images/attos.web.png" alt=""/>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="listado1">
+            <li><a href="/mi-primera-web/index.html">contacto</a></li>
+            <li><a href="#">acerca de nosotros </a></li>
+            <li><a href="#">sedes</a></li>
+            <li><a href="#">asociados</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2 class="titulo_seccion">Contacto</h2>
+        <div class="form_contenedor">
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo">
+                </div>
+                <div class="form-group">
+                <label for="pais">Ciudad:</label>
+                    <select name="Ciudad" id="Ciudad">
+                        <option value="bogota">Bogota</option>
+                        <option value="medellin">Medellin</option>
+                        <option value="cali">Cali</option>
+                        <option value="santa marta">Santa Marta</option>
+                        <option value="cartagena">Cartagena</option>
+                        <option value="pereira">Pereira</option>
+                        <option value="default" selected>Seleccionar</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="acerca-imagen">
+            <img src="../Images/attos-logo-footer.png" alt="logo"
+            height="103em"
+            width="100em"
+            >
+            
+        </div>
+    </footer>
+</body>
+</html>
